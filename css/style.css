@@ -1,8 +1,28 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+
 /* Global style */
+/* ------- */
+/* define custom css variables */
+:root{
+    --bg-black-900:#000000;
+    --bg-black-100:#dddddd;
+    --bg-black-50:#eff0f4;
+    --text-black-900:#000000;
+    --text-black-700:#555555;
+    --text-black-600:#666666;
+    --text-black-300:#bbbbbb;
+
+}
     body{
         font-size: 16px;
         line-height: 1.5;
         overflow: hidden;
+    }
+    *:not(i){
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
     }
     *{
         margin: 0;
@@ -42,7 +62,7 @@
 
 /* header */
 .header{
-    background-color: gray;
+    
     padding:  20px 15px;
     position: absolute;
     width: 100%;
@@ -61,9 +81,20 @@
     color:var(--skin-color);
     border-radius: 50%;
     border:2px solid var(--skin-color);
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .header .hamburger-btn{
     height: 40px;
     width: 40px;
-    background-color: blue;
+    box-shadow: 0 0 10px; box-shadow: 0 0 10px; box-shadow: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .hamburger-btn span{
+    display: block;
+    height: 2px;
+    width: 16px;
+    background-color:var(--bg-black-900);
 }
