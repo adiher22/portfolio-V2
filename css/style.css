@@ -19,6 +19,7 @@
         font-size: 16px;
         line-height: 1.5;
         overflow: hidden;
+        background-color: var(--bg);
     }
     *:not(i){
         font-family: 'Raleway', sans-serif;
@@ -112,3 +113,7 @@
 .header .hamburger-btn span:before{
     top: -6px;
 }
+.header .hamburger-btn span:after{
+    top: 6px;
+}
+
